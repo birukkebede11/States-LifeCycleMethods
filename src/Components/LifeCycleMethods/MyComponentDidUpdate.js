@@ -17,15 +17,18 @@ class MyComponentDidUpdate extends Component {
 	};
 
 	componentDidUpdate() {
-		console.log("Number of clicks: " + this.state.counter);
+		// console.log("Number of clicks: " + this.state.counter);
 
 		document.title = "Hello World";
+
+		document.getElementById("topic").innerHTML =
+			"Topic just changed using life cycle";
 	}
 
 	render() {
 		return (
 			<div>
-				<h1>ComponentDidUpdate Example</h1>
+				<h1 id="topic">ComponentDidUpdate Example</h1>
 				<br />
 				<h1>{this.state.counter}</h1>
 				<button onClick={this.increment}>Increment</button>
