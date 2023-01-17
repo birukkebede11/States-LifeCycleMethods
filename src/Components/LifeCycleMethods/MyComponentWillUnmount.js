@@ -3,20 +3,23 @@ import LoggedInPage from "./LoggedInPage";
 import LoggedOutPage from "./LoggedOutPage";
 
 class MyComponentWillUnmount extends Component {
-	constructor(props) {
-		super(props);
+	constructor() {
+		super();
 		this.state = {
-			show: true,
+			show: false,
 		};
 	}
+
+	changeStatus = () => {
+		this.setState({ show: !this.state.show });
+	};
+
 	render() {
 		return (
 			<>
 				<div>{this.state.show ? <LoggedInPage /> : <LoggedOutPage />}</div>
-				<button
-					onClick={() => {
-						this.setState({ show: !this.state.show });
-					}}>
+				
+				<button onClick={this.changeStatus}>
 					{this.state.show ? "Log Out" : "Log In"}
 				</button>
 			</>

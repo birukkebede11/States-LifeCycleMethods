@@ -5,8 +5,8 @@ class InitializingState extends Component {
 		super();
 		this.state = {
 			name: "Abebe",
-			bootcamp: "Evangadi",
-			group: "1",
+			bootCamp: "Evangadi",
+			group: 1,
 		};
 	}
 
@@ -14,9 +14,9 @@ class InitializingState extends Component {
 		return (
 			<div>
 				<h1>Initializing State Example</h1>
-				<h3>{this.state.name}</h3>
-				<h3>{this.state.group}</h3>
-				<h3>School name : {this.state.bootcamp}</h3>
+				<h2>{this.state.name}</h2>
+				<h2>{this.state.group}</h2>
+				<h2>School name : {this.state.bootCamp}</h2>
 			</div>
 		);
 	}

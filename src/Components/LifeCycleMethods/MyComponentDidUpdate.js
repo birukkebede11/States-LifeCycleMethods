@@ -1,16 +1,25 @@
 import React, { Component } from "react";
 
 class MyComponentDidUpdate extends Component {
-	state = {
-		counter: 0,
-	};
+	constructor() {
+		super();
+		this.state = {
+			counter: 0,
+		};
+	}
 
 	increment = () => {
-		this.setState({ counter: this.state.counter + 1 });
+		this.setState((x) => {
+			return {
+				counter: x.counter + 1,
+			};
+		});
 	};
 
 	componentDidUpdate() {
-		alert("Number of clicks: " + this.state.counter);
+		console.log("Number of clicks: " + this.state.counter);
+
+		document.title = "Hello World";
 	}
 
 	render() {
@@ -18,7 +27,7 @@ class MyComponentDidUpdate extends Component {
 			<div>
 				<h1>ComponentDidUpdate Example</h1>
 				<br />
-				<p>{this.state.counter}</p>
+				<h1>{this.state.counter}</h1>
 				<button onClick={this.increment}>Increment</button>
 			</div>
 		);
@@ -26,4 +35,3 @@ class MyComponentDidUpdate extends Component {
 }
 
 export default MyComponentDidUpdate;
-

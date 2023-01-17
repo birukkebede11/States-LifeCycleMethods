@@ -7,22 +7,23 @@ import InitializingState from "./Components/StatesExample/InitializingState";
 import HandlingEvents from "./Components/StatesExample/HandlingEvents";
 import NormalVariables from "./Components/StatesExample/NormalVariables";
 import UpdatingState from "./Components/StatesExample/UpdatingState";
+import PassingPropsToState from "./Components/StatesExample/PassingPropsToState";
+
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
+				{/* <NormalVariables /> */}
+
 				{/* <InitializingState /> */}
+				{/* <PassingPropsToState batchNumber="Aug 2022" /> */}
 
 				{/* <HandlingEvents /> */}
 
-				{/* <NormalVariables /> */}
-
 				{/* <UpdatingState /> */}
 
-				{/* <MyWillMountAndDidMount /> */}
-
+				<MyWillMountAndDidMount />
 				{/* <MyComponentDidUpdate /> */}
-
 				<MyComponentWillUnmount />
 			</div>
 		);

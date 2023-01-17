@@ -8,9 +8,9 @@ class HandlingEvents extends Component {
 		};
 	}
 
-	increment = () => {
+	increment() {
 		console.log("You clicked Add 1");
-	};
+	}
 
 	render() {
 		return (
@@ -18,7 +18,6 @@ class HandlingEvents extends Component {
 				<h1>Handling Events</h1>
 				<h2>{this.state.counter}</h2>
 				<button onClick={this.increment}>Add 1</button>
-				<br />
 			</div>
 		);
 	}
