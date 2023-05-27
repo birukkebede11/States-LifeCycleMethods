@@ -18,7 +18,7 @@ class MyComponentWillUnmount extends Component {
 		return (
 			<>
 				<div>{this.state.show ? <LoggedInPage /> : <LoggedOutPage />}</div>
-				
+
 				<button onClick={this.changeStatus}>
 					{this.state.show ? "Log Out" : "Log In"}
 				</button>

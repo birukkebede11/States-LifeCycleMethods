@@ -22,7 +22,10 @@ class MyComponentDidUpdate extends Component {
 		document.title = "Hello World";
 
 		document.getElementById("topic").innerHTML =
-			"Topic just changed using life cycle";
+			document.getElementById("topic").innerHTML ===
+			"Topic just changed using life cycle"
+				? "Hi class"
+				: "Topic just changed using life cycle";
 	}
 
 	render() {

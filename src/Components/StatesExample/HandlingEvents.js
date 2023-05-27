@@ -22,4 +22,5 @@ class HandlingEvents extends Component {
 		);
 	}
 }
+
 export default HandlingEvents;

@@ -9,7 +9,7 @@ class LoggedInPage extends Component {
 			group: "1",
 		};
 	}
-	
+
 	componentWillUnmount() {
 		console.log("component is unmounting");
 		alert("You have successfully logged out.");
