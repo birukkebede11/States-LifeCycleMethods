@@ -11,7 +11,7 @@ class LoggedInPage extends Component {
 	}
 
 	componentWillUnmount() {
-		console.log("component is unmounting");
+		// console.log("component is unmounting");
 		alert("You have successfully logged out.");
 	}
 

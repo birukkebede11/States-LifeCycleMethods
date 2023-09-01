@@ -17,6 +17,7 @@ class MyComponentWillUnmount extends Component {
 	render() {
 		return (
 			<>
+				<h1>Component Will Unmount Example</h1>
 				<div>{this.state.show ? <LoggedInPage /> : <LoggedOutPage />}</div>
 
 				<button onClick={this.changeStatus}>

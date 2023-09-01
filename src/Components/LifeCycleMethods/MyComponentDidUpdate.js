@@ -18,7 +18,6 @@ class MyComponentDidUpdate extends Component {
 
 	componentDidUpdate() {
 		// console.log("Number of clicks: " + this.state.counter);
-
 		document.title = "Hello World";
 
 		document.getElementById("topic").innerHTML =

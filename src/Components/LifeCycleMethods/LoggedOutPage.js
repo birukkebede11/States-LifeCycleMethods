@@ -2,11 +2,7 @@ import React, { Component } from "react";
 
 class LoggedOutPage extends Component {
 	render() {
-		return (
-			<div>
-				<h1>Please, Log In</h1>
-			</div>
-		);
+		return <h1>Please, Log In</h1>;
 	}
 }
 

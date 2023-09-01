@@ -16,7 +16,7 @@ class App extends Component {
 				{/* <NormalVariables /> */}
 
 				{/* <InitializingState /> */}
-				{/* <PassingPropsToState batchNumber="Jan 2023" /> */}
+				{/* <PassingPropsToState batchNumber="April 2023" /> */}
 
 				{/* <HandlingEvents /> */}
 
