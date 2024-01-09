@@ -3,6 +3,7 @@ import React, { Component } from "react";
 class NormalVariables extends Component {
 	render() {
 		let x = 100;
+
 		const increment = () => {
 			x = x + 1;
 

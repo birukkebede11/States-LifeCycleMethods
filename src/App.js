@@ -16,15 +16,15 @@ class App extends Component {
 				{/* <NormalVariables /> */}
 
 				{/* <InitializingState /> */}
-				{/* <PassingPropsToState batchNumber="April 2023" /> */}
+				{/* <PassingPropsToState batchNumber="Aug 2023" /> */}
 
-				{/* <HandlingEvents /> */}
+				<HandlingEvents />
 
 				{/* <UpdatingState /> */}
 
 				{/* <MyWillMountAndDidMount /> */}
 				{/* <MyComponentDidUpdate /> */}
-				<MyComponentWillUnmount />
+				{/* <MyComponentWillUnmount /> */}
 			</div>
 		);
 	}

@@ -9,9 +9,7 @@ class MyWillMountAndDidMount extends Component {
 	}
 
 	componentWillMount() {
-		this.setState({
-			randomText: "Loading...",
-		});
+		this.setState({ randomText: "Loading..." });
 	}
 
 	componentDidMount() {

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Bob from "./Bob";
+
 class PassingPropsToState extends Component {
 	constructor(props) {
 		super();
@@ -7,7 +8,7 @@ class PassingPropsToState extends Component {
 			name: "Kebede",
 			group: 2,
 			batch: props.batchNumber,
-			sampleText: "Hello World",
+			sampleText: "Hello World!!!",
 		};
 	}
 

@@ -9,15 +9,10 @@ class MyComponentDidUpdate extends Component {
 	}
 
 	increment = () => {
-		this.setState((x) => {
-			return {
-				counter: x.counter + 1,
-			};
-		});
+		this.setState((x) => ({ counter: x.counter + 1 }));
 	};
 
 	componentDidUpdate() {
-		// console.log("Number of clicks: " + this.state.counter);
 		document.title = "Hello World";
 
 		document.getElementById("topic").innerHTML =
@@ -28,6 +23,7 @@ class MyComponentDidUpdate extends Component {
 	}
 
 	render() {
+
 		return (
 			<div>
 				<h1 id="topic">ComponentDidUpdate Example</h1>
